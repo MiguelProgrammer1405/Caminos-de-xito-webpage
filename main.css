@@ -368,12 +368,6 @@ navbar styles
   height: 273.594px;
 }
 
-.social-media-icons {
-  margin: 0;
-  color: var(--primary-500);
-  display: none;
-}
-
 @media screen and (min-width: 750px) {
   .toggle-btn {
     display: none;
@@ -383,6 +377,7 @@ navbar styles
     width: 95vw;
     display: flex;
     justify-content: space-between;
+    max-width: 1170px;
     align-items: center;
     gap: 1rem;
     margin: 0 auto;
@@ -391,7 +386,7 @@ navbar styles
   .navigation-btns {
     display: flex;
     height: auto;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .navigation-btns a {
@@ -403,15 +398,9 @@ navbar styles
     background: var(--fourth-color);
     color: var(--primary-white);
   }
-}
 
-@media screen and (min-width: 1000px) {
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
+  .nav-header {
+    padding: 1rem 0;
   }
 }
 
@@ -705,9 +694,12 @@ polular videos section
   justify-content: center;
   gap: 2rem;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 .footer p {
   font-size: 1.5rem;
   text-transform: capitalize;
+  text-align: center;
+  margin-top: 0;
 }
