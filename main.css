@@ -586,8 +586,6 @@ books summaries section
   gap: 1rem;
   padding: 1rem;
   margin: 0 auto 2rem auto;
-  min-width: 400px;
-  max-width: 400px;
   height: 290px;
 }
 
@@ -626,6 +624,8 @@ books summaries section
 
   .single-book-summary {
     margin-bottom: 0;
+    min-width: 400px;
+    max-width: 400px;
   }
 }
 
