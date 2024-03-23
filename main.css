@@ -587,7 +587,7 @@ books summaries section
   padding: 1rem;
   margin: 0 auto 2rem auto;
   align-items: center;
-  height: 350px;
+  height: 370px;
 }
 
 .img-book-container {
@@ -627,6 +627,8 @@ books summaries section
     margin-bottom: 0;
     min-width: 400px;
     max-width: 400px;
+    height: 300px;
+    align-items: start;
   }
 }
 
