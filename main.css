@@ -586,7 +586,8 @@ books summaries section
   gap: 1rem;
   padding: 1rem;
   margin: 0 auto 2rem auto;
-  height: 290px;
+  align-items: center;
+  height: 350px;
 }
 
 .img-book-container {
@@ -613,7 +614,7 @@ books summaries section
   height: 100%;
 }
 
-@media screen and (min-width: 934px) {
+@media screen and (min-width: 850px) {
   .books-summaries-center {
     display: grid;
     grid-template-columns: auto auto;
