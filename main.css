@@ -20,7 +20,7 @@
   --primary-200: hsl(32, 100%, 80%);
   --primary-100: hsl(32, 100%, 90%);
   --primary-white: hsl(0, 0%, 100%);
-  --fourth-color: #0f0e16;
+  --fourth-color: #0f0e17;
   --primary-grey: #a7a9be;
   --secondary-grey: #2e2f3e;
   /* ilustration colors */
@@ -818,4 +818,58 @@ newsletter section
   color: var(--white);
   background: var(--primary-500);
   border: 1px solid var(--primary-700);
+}
+
+/*=====================
+ summaries main section 
+ ======================*/
+
+.summaries-section {
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+.single-book-book-notes {
+  background: var(--fourth-color);
+  align-items: start;
+  height: 278px;
+}
+
+.single-book-book-notes h4 {
+  color: var(--primary-white);
+}
+
+.single-book-book-notes p {
+  color: var(--primary-grey);
+}
+
+@media screen and (min-width: 800px) {
+  .summaries-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+
+  .single-book-book-notes {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .summaries-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    margin: 0 auto;
+  }
+
+  .single-book-book-notes {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 }
