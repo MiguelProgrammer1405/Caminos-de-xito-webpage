@@ -985,38 +985,32 @@ summary book pages
 }
 
 /* ===============
-productivity main page
+main topics (productivity, money, study, discipline main page
 ==================*/
 
-.productivity-main-section {
+.main-topic-main-section {
   padding-top: 150.391px;
   width: 90vw;
   margin: 0 auto;
 }
 
-.productivity-main-section h1 {
+.main-topic-main-section h1 {
   font-size: 2.3rem;
   font-weight: bold;
   letter-spacing: 0;
 }
 
-.productivity-main-section .title-underline {
+.main-topic-main-section .title-underline {
   margin-left: 0;
   margin-bottom: 5rem;
 }
 
-.productivity-main-section h1 {
-  font-size: 2.3rem;
-  font-weight: bold;
-  letter-spacing: 0;
-}
-
-.productivity-main-section p {
+.main-topic-main-section p {
   margin-bottom: 4rem;
   font-size: 1.2rem;
 }
 
-.img-productivity {
+.img-main-topic {
   margin: 0 auto;
   border: 2px solid var(--fourth-color);
   border-radius: var(--borderRadius);
@@ -1024,7 +1018,11 @@ productivity main page
   width: 100%;
 }
 
-.productivity-overview p {
+.main-topic-img {
+  height: 100%;
+}
+
+.main-topic-overview p {
   margin-bottom: 1rem;
 }
 
@@ -1044,7 +1042,7 @@ productivity main page
   margin-bottom: 1rem;
 }
 
-.video-container-productivity {
+.video-container-main-topic {
   height: 250px;
 }
 
@@ -1061,12 +1059,15 @@ productivity main page
 
   .summary-and-video-card {
     display: grid;
-    grid-template-rows: 150px 150px auto;
+    grid-template-rows: 100px 120px auto;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .productivity-overview {
+  .video-summaries-center {
+    row-gap: 3rem;
+  }
+  .main-topic-overview {
     display: grid;
     grid-template-columns: auto auto;
     max-width: var(--max-width);
@@ -1076,7 +1077,7 @@ productivity main page
     margin: 0 auto;
   }
 
-  .img-productivity {
+  .img-main-topic {
     margin: 0 auto;
     border: 2px solid var(--fourth-color);
     border-radius: var(--borderRadius);
@@ -1085,7 +1086,7 @@ productivity main page
     height: 276px;
   }
 
-  .productivity-overview-and-aside {
+  .main-topic-overview-and-aside {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: start;
@@ -1093,12 +1094,8 @@ productivity main page
     margin-bottom: 5rem;
   }
 
-  .video-container-productivity {
+  .video-container-main-topic {
     width: 100%;
-    height: 400px;
-  }
-
-  .video-container-productivity {
     height: 300px;
   }
 
