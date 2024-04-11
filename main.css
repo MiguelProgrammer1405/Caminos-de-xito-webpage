@@ -307,6 +307,16 @@ small,
 navbar styles
 ============== */
 
+.logo-web-page {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-logo-img {
+  width: 30px;
+  height: 30px;
+}
+
 .navbar {
   background: var(--fourth-color);
   width: 100vw;
