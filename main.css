@@ -360,10 +360,58 @@ navbar styles
   transition: var(--transition);
 }
 
+.topics-collapsable-links a {
+  color: var(--primary-white);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  display: block;
+  padding: 0.5rem 2rem;
+  transition: var(--transition);
+}
+
+.topics-collapsable-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.topic-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+  transition: var(--transition);
+}
+
+.topic-container:hover {
+  background: var(--primary-white);
+  transition: var(--transition);
+  color: var(--fourth-color);
+}
+
+.topic-container:hover .navbar-btn {
+  color: black;
+}
+
+.navbar-btn {
+  background-color: transparent;
+  color: var(--primary-white);
+  border: transparent;
+  padding: 0;
+  transition: var(--transition);
+}
+
 .navigation-btns a:hover {
   background: var(--primary-white);
   color: var(--fourth-color);
   padding-left: 1.5rem;
+}
+
+.topics-collapsable-links a:hover {
+  padding-left: 2.5rem;
 }
 
 .navigation-btns {
@@ -371,11 +419,18 @@ navbar styles
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  /* altura 273.594px */
 }
 
 .show-nav {
   height: 273.594px;
+}
+
+.show-list {
+  height: 166.375px;
+}
+
+.show-nav-2 {
+  height: 494.688px;
 }
 
 @media screen and (min-width: 750px) {
@@ -389,7 +444,7 @@ navbar styles
     justify-content: space-between;
     max-width: 1170px;
     align-items: center;
-    gap: 1rem;
+    gap: 0.1rem;
     margin: 0 auto;
   }
 
@@ -409,8 +464,34 @@ navbar styles
     color: var(--primary-white);
   }
 
+  .navbar-btn:hover {
+    color: red;
+  }
+
+  .topic-container:hover {
+    padding-left: 0;
+    background: var(--fourth-color);
+    color: var(--primary-white);
+  }
+
   .nav-header {
     padding: 1rem 0;
+  }
+
+  .topic-container {
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 0;
+    justify-content: ;
+  }
+
+  .topics-collapsable-links {
+    display: none;
+  }
+
+  .navbar-btn {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -1076,6 +1157,7 @@ main topics (productivity, money, study, discipline main page
 @media screen and (min-width: 992px) {
   .video-summaries-center {
     row-gap: 3rem;
+    max-width: var(--max-width);
   }
   .main-topic-overview {
     display: grid;
