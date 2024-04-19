@@ -377,31 +377,35 @@ navbar styles
 }
 
 .topic-container {
+  /* border: 2px solid red; */
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 2rem;
+  position: relative;
   transition: var(--transition);
 }
 
-.topic-container:hover {
-  background: var(--primary-white);
-  transition: var(--transition);
-  color: var(--fourth-color);
+.topic-container-2 {
+  position: relative;
+  overflow: visible;
 }
 
 .topic-container:hover .navbar-btn {
-  color: black;
+  color: var(--primary-500);
 }
 
 .navbar-btn {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
   background-color: transparent;
   color: var(--primary-white);
   border: transparent;
   padding: 0;
   transition: var(--transition);
+}
+
+.navbar-btn:hover {
+  color: white;
 }
 
 .navigation-btns a:hover {
@@ -421,12 +425,10 @@ navbar styles
   transition: var(--transition);
 }
 
+/* javascript classes */
+
 .show-nav {
   height: 273.594px;
-}
-
-.show-list {
-  height: 166.375px;
 }
 
 .show-nav-2 {
@@ -451,7 +453,8 @@ navbar styles
   .navigation-btns {
     display: flex;
     height: auto;
-    gap: 2rem;
+    gap: 2.2rem;
+    overflow: visible;
   }
 
   .navigation-btns a {
@@ -464,13 +467,7 @@ navbar styles
     color: var(--primary-white);
   }
 
-  .navbar-btn:hover {
-    color: red;
-  }
-
-  .topic-container:hover {
-    padding-left: 0;
-    background: var(--fourth-color);
+  .topic-container:hover .navbar-btn {
     color: var(--primary-white);
   }
 
@@ -478,21 +475,46 @@ navbar styles
     padding: 1rem 0;
   }
 
-  .topic-container {
-    display: flex;
-    gap: 0.5rem;
-    padding-right: 0;
-    justify-content: ;
+  .topics-collapsable-links {
+    height: 0;
+    padding: 0;
+    width: 220px;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background: var(--primary-500);
+    color: var(--fourth-color);
+    border-radius: var(--borderRadius);
   }
 
-  .topics-collapsable-links {
-    display: none;
+  .topics-collapsable-links a {
+    padding: 0.5rem 2rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fourth-color);
+  }
+
+  .topics-collapsable-links a:hover {
+    padding-left: 1.5rem;
+    background: var(--fourth-color);
+    color: var(--primary-white);
   }
 
   .navbar-btn {
-    padding: 0;
-    text-align: center;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 115%;
   }
+
+  /* .topic-container:hover .navbar-btn {
+    color: white;
+  } */
+}
+
+.show-list {
+  height: 166.375px;
 }
 
 /*========

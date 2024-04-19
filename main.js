@@ -1,11 +1,11 @@
 // Create a variable for the button
-var toggleButton = document.getElementById('toggle-btn')
-var navbarBtn = document.getElementById('navbar-btn')
-var topicsCollapsable = document.querySelector('.topics-collapsable-links')
+const toggleButton = document.getElementById('toggle-btn')
+const navbarBtn = document.getElementById('navbar-btn')
+const topicsCollapsable = document.querySelector('.topics-collapsable-links')
 
 // Create a variable for the element to toggle the class on
-var navigationBtns = document.getElementById('navigation-btns')
-
+const navigationBtns = document.getElementById('navigation-btns')
+const topicContainer = document.querySelector('.topic-container')
 // Add click event listener to the button
 toggleButton.addEventListener('click', function () {
   // Use the myElement variable to toggle the class
@@ -31,7 +31,12 @@ window.addEventListener('scroll', function () {
   }
 })
 
-navbarBtn.addEventListener('click', function () {
+topicContainer.addEventListener('click', function () {
   topicsCollapsable.classList.toggle('show-list')
   navigationBtns.classList.toggle('show-nav-2')
 })
+
+// navbarBtn.addEventListener('click', function () {
+//   topicsCollapsable.classList.toggle('show-list')
+//   navigationBtns.classList.toggle('show-nav-2')
+// })
