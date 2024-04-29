@@ -933,6 +933,13 @@ newsletter section
   border: 1px solid var(--primary-700);
 }
 
+/* javascript class */
+.filter-btn-selected {
+  color: var(--white);
+  background: var(--primary-500);
+  border: 1px solid var(--primary-700);
+}
+
 /*=====================
  summaries main section 
  ======================*/

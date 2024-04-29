@@ -36,7 +36,7 @@ topicContainer.addEventListener('click', function () {
   navigationBtns.classList.toggle('show-nav-2')
 })
 
-// navbarBtn.addEventListener('click', function () {
-//   topicsCollapsable.classList.toggle('show-list')
-//   navigationBtns.classList.toggle('show-nav-2')
-// })
+navbarBtn.addEventListener('click', function () {
+  topicsCollapsable.classList.toggle('show-list')
+  navigationBtns.classList.toggle('show-nav-2')
+})
