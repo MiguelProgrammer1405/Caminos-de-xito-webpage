@@ -35,6 +35,7 @@ window.addEventListener('scroll', function () {
 topicContainer.addEventListener('click', function () {
   topicsCollapsable.classList.toggle('show-list')
   navigationBtns.classList.toggle('show-nav-2')
+  navigationBtns.classList.add('show-nav')
 })
 
 collapsableLink.addEventListener('click', function (e) {
