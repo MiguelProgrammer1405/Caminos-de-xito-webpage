@@ -19,15 +19,15 @@
       <div class="nav-center">
         <div class="nav-header">
           <div class="logo-web-page">
-            <a href="../index.html">
+            <a href="./index.html">
               <img
                 src="../imagenes/logo caminos de exito.png"
                 alt="logo caminos de exito"
                 class="main-logo-img img"
               />
             </a>
-            <a href="../index.html">
-              <h4>caminos de éxito</h4>
+            <a href="./index.html">
+              <h4>caminos de exito</h4>
             </a>
           </div>
           <button type="button" class="toggle-btn" id="toggle-btn">
@@ -38,8 +38,28 @@
         <ul class="navigation-btns" id="navigation-btns">
           <li><a href="../index.html">inicio</a></li>
           <li><a href="#">blog</a></li>
-          <li><a href="#">videos</a></li>
-          <li><a href="../index.html">notas</a></li>
+          <li class="topic-container-2">
+            <!-- al topic-container se le agregó
+            el evento -->
+            <div class="topic-container">
+              <a href="#" id="collapsable-link">temas</a>
+              <button class="navbar-btn" id="navbar-btn">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <!-- a esta ul se afecta con el evento de topic container -->
+            <ul class="topics-collapsable-links">
+              <li><a href="../productividad/index.html">productividad</a></li>
+              <li><a href="../dinero/index.html">dinero</a></li>
+              <li><a href="../disciplina/index.html">disciplina</a></li>
+              <li>
+                <a href="../tecnicas-de-estudio/index.html"
+                  >técnicas de estudio</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="../notas-libros/index.html">notas</a></li>
           <li><a href="#">boletin</a></li>
           <li><a href="#">academia</a></li>
         </ul>
@@ -276,7 +296,7 @@
       </div>
     </section>
     <!-- end of summary section -->
-    <section class="section newsletter-section">
+    <!-- <section class="section newsletter-section">
       <div class="section-center newsletter-center">
         <div class="newsletter-info">
           <h2>
@@ -296,14 +316,14 @@
           <iframe
             src="https://caminosdexito.substack.com/embed"
             width="100%"
-            height="100%"
+            height="320"
             style="border: 1px solid #eee; background: white"
             frameborder="0"
             scrolling="no"
           ></iframe>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer class="footer">
       <div class="footer-center">
         <ul class="footer-icons">

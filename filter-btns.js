@@ -21,7 +21,7 @@ const libros = [
     id: 3,
     title: 'el monje que vendió su ferrari',
     category: ['sabiduria'],
-    link: './el-monje-que-vendió-su-ferrari/index.html',
+    link: './el-monje-que-vendio-su-ferrari/index.html',
     img: '../imagenes/imagenes-resumenes-de-libros/El-monje-que-vendio-su-ferrari.jpg',
     alt: 'el-monje-que-vendio-su-ferrari-img',
     desc: '“El monje que vendió su Ferrari” es una fábula espiritual que ofrece lecciones sobre cómo vivir con pasión y propósito, dejando atrás el materialismo.',
@@ -512,6 +512,8 @@ const libros = [
   },
 ]
 
+console.log(libros[2])
+
 const btnContainerBooks = document.querySelector('.btn-container-books')
 const summariesCenter = document.querySelector('.summaries-center')
 
@@ -519,8 +521,8 @@ window.addEventListener('DOMContentLoaded', function () {
   displayMenuItems(libros)
   reduceCategories(libros)
   // temporal code below to prevent default behavior of the links
-  const linksBooks = document.querySelectorAll('.summaries-center a')
-  preventDefaultBehavior(linksBooks)
+  // const linksBooks = document.querySelectorAll('.summaries-center a')
+  // preventDefaultBehavior(linksBooks)
 })
 
 // display menu items
@@ -529,7 +531,7 @@ function displayMenuItems(menuItems) {
     // console.log(item)
     return `<article class="single-book-summary single-book-book-notes">
           <div class="img-book-container">
-            <a href="#">
+            <a href="${item.link}">
               <img
                 src=${item.img}
                 alt=${item.alt}
@@ -538,7 +540,7 @@ function displayMenuItems(menuItems) {
             </a>
           </div>
           <div class="summary-info">
-            <a href="#">
+            <a href="${item.link}">
               <h4>${item.title}</h4>
             </a>
             <p>
@@ -592,7 +594,7 @@ function displayMenuButtons(array) {
       // here I am going to try to add the code to prevent the default behavior of the links
       // temporal code below to prevent default behavior of the links
       const linksBooks = document.querySelectorAll('.summaries-center a')
-      preventDefaultBehavior(linksBooks)
+      // preventDefaultBehavior(linksBooks)
     })
   })
 }
