@@ -41,7 +41,7 @@ const libros = [
     id: 5,
     title: 'maestría',
     category: ['sabiduria', 'mentalidad'],
-    link: './maestría/index.html',
+    link: './maestria/index.html',
     img: '../imagenes/imagenes-resumenes-de-libros/Maestría-Robert-Greene.jpg',
     alt: 'maestría-img',
     desc: '“Maestría” explora los caminos hacia la excelencia y el dominio de habilidades, apelando a la práctica dedicada y el aprendizaje continuo.',
