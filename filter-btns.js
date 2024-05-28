@@ -129,7 +129,7 @@ const libros = [
     id: 14,
     title: 'el hombre más rico de babilonia',
     category: ['dinero'],
-    link: './el-hombre-más-rico-de-babilonia/index.html',
+    link: './el-hombre-mas-rico-de-babilonia/index.html',
     img: '../imagenes/imagenes-resumenes-de-libros/El-hombre-mas-rico-de-babilonia.jpg',
     alt: 'el-hombre-más-rico-de-babilonia-img',
     desc: 'El libro explora las claves atemporales de la riqueza y la prosperidad ambientadas en la antigua Babilonia.',

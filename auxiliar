@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../../normalize.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../../main.css" />
+    <!-- font-awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e1d1ca486f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../imagenes/logo caminos de exito.png"
+    />
+    <title>El monje que vendió su ferrari</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <!-- start of summary -->
+    <section class="section summary-book-section">
+      <div class="book-overview">
+        <div class="title-and-overview">
+          <h1>
+            El monje que vendió su Ferrari - Resumen con notas e ideas
+            importantes
+          </h1>
+          <p>
+            Este resumen explora la transformadora jornada de Julián, un abogado
+            exitoso cuya vida cambia drásticamente tras sufrir un infarto.
+            Decidido a encontrar un verdadero propósito y bienestar, Julián
+            vende todas sus posesiones, incluyendo su preciado Ferrari, y se
+            embarca en un viaje espiritual a la India. Allí, aprende valiosas
+            lecciones sobre la vida, la felicidad y el autoconocimiento de la
+            comunidad de sabios de Sibana.
+          </p>
+        </div>
+        <div class="img-summary-container-2">
+          <img
+            src="../../imagenes/imagenes-resumenes-de-libros/El-monje-que-vendio-su-ferrari.jpg"
+            class="img book-img-summary"
+            alt="El monje que vendió su Ferrari"
+          />
+        </div>
+      </div>
+      <!-- start of summary -->
+
+      <!-- end of summary -->
+    </section>
+    <!-- end of summary section -->
+
+    <section class="section newsletter-section">
+      <div class="section-center newsletter-center">
+        <div class="newsletter-info">
+          <h2>
+            <span><i class="fa-solid fa-envelope"></i></span>Suscribete a
+            nuestro boletin
+          </h2>
+          <p>
+            Únete al boletin de caminos de éxito, una comunidad en crecimiento
+            para quienes buscan inspiración y consejos prácticos. Cada domingo,
+            te enviamos directamente a tu correo selecciones de productividad,
+            mejoras para tu día a día, y perspectivas valiosas. Todo pensado
+            para apoyarte en tu camino hacia el éxito. ¡Descubre con nosotros
+            cómo alcanzar tus metas!
+          </p>
+        </div>
+        <div class="newsletter-form">
+          <iframe
+            src="https://caminosdexito.substack.com/embed"
+            width="100%"
+            height="320"
+            style="border: 1px solid #eee; background: white"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-center">
+        <ul class="footer-icons">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+        </ul>
+        <p>&copy;caminos de éxito 2024, todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script src="../../dynamic-navbar.js"></script>
+  </body>
+</html>
